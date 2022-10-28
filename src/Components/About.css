@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+.about {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--bluebg);
+    color: var(--lightgrey);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.about--left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 40%;
+    margin-top: 5vw;
+}
+
+.about--title{
+    display: block;
+    width: 80% ;
+    font-size: 3vw;
+    padding: 0.3vh;
+    padding-left: 32%;
+    font-weight: bold;
+    color: var(--bluebg);
+    background-color: var(--yellow);
+    z-index: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aboutpicture{
+    position: relative;
+    margin-top: 3vw;
+    margin-left: 40%;
+    width: fit-content;
+    z-index: 0;
+}
+.aboutpic {
+    display: block;
+    height: 55vh;
+    width: 20vw;
+    z-index: 1;
+    object-fit: cover;
+}
+.aboutpicture::after{
+    content: " ";
+    border: 7px solid var(--yellow);
+    height: 55vh;
+    width: 20vw;
+    position: absolute;
+    box-sizing: border-box;
+    left: -3vw;
+    top: 6vh;
+    z-index: -1;
+}
+
+.aboutcontent{
+    margin-top: 10%;
+    padding-right: 2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 59%;
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    line-height: 2vw;
+}
+.motto--container{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+.motto{
+    width: 14%;
+}
+.motto--content--container{
+    width: 85%;
+}
+.motto--content{
+    color: var(--white);
+    font-style: italic;
+    margin-left: 3%;
+}
+.quote{
+    color: var(--white);
+    opacity: 0.8;
+}
+.motto--credit::before{
+    content: " \2500";
+    color: var(--white);
+    opacity: 0.8;
+}
+.motto--credit{
+    color: var(--white);
+    margin-left: 25vw;
+}
+.education--container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.education{
+    width: 14%;
+}
+.education--content{
+    color: var(--white);
+    display: inline;
+    opacity: 1;
+    width: 85%;
+}
+
+.language--container{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.language--title{
+    width: 14%;
+}
+.language--content--container{
+    width: 85%;
+    color: var(--white);
+}
+.language--score{
+    color: var(--yellow);
+}
+
+.hobbies--title{
+    width: 14%;
+}
+.hobbies{
+    width: 85%;
+}
+.hobby{
+    width: 5vw;
+    height: 7vh;
+    transition: scale 500ms ease;
+    color: var(--white);
+}
+.hobby:hover{
+    scale: 1.4;
+}
+@media (min-width:200px)and (max-width:768px){
+    .about{
+        flex-direction: column;
+        height: 200vh;
+    }
+    .about> div{
+        width: 100vw;
+        height: 100vh;
+    }
+    .aboutpicture{
+        margin-left: 14vw;
+        margin-top: -1vh;
+    }
+    .aboutpicture::after{
+        width: 70vw;
+        margin-top: 6vh;
+    }
+    .aboutpic{
+        width: 70vw;
+        margin-top: 8vh;
+        margin-left: 4vw;
+    }
+    .about--title{
+        height: 5vh;
+        width: 60%;
+        margin-top: 4vh;
+        font-size: larger;
+        padding-top: 0.8vh;
+        padding-left: 20%;
+    }
+    .aboutcontent{
+        padding-left: 4vw;
+        justify-content: space-around;
+        margin-top: 3vh;
+    }
+    .aboutcontent> div{
+        padding-bottom: 3vh;
+    }
+    .mobile{
+        line-height: 3.5vh;
+        width: 67%;
+    }
+    .hobbies{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

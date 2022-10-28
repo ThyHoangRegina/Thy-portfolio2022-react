@@ -1,0 +1,23 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+:root{
+    --bluebg: #19253f;
+    --yellow: #F4BF3A;
+    --white: #F1F1E6;
+    --lightblue: #258FFF;
+    --lightyellow: #e7dac1;
+    --lightgrey: #868FB0;
+    --darkgrey: #404a67;
+    --blurdarkgrey: rgb(64, 74, 103,1);
+}
+.loader{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: var(--bluebg);
+}

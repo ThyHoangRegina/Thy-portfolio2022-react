@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+    padding: 0;
+}
+.skills {
+    height: 100vh;
+    background-color: var(--lightyellow);
+    transition: background-color 900ms linear;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    position: relative;
+    z-index: 0;
+}
+.skills:hover{
+    background-color: var(--bluebg);
+}
+.skilltitle{
+    position: absolute;
+    height: 100vh;
+    left: 80vw;
+    top: 0vh;
+    background-color: var(--yellow);
+    overflow: hidden;
+}
+.skilltitle > p{
+    color: var(--bluebg);
+    font-weight: bold;
+    font-size: 10vh;
+    margin-top: 10vh;
+    z-index: 0;
+    writing-mode: vertical-rl;
+    animation: dropdown 8s linear infinite normal backwards;
+}
+@keyframes dropdown {
+    0% {margin-top: 0vh;}
+    30% {margin-top: 30vh;}
+    60% {margin-top: 60vh;}
+    80% {margin-top: 80vh;}
+    100% {margin-top: 100vh;}
+}
+.skillicon{
+    color: var(--lightyellow);
+    height: 5vw;
+    width: 50vw;
+    position: absolute;
+    display: flex;
+    top: 17vh;
+    left: 28vw;
+    
+}
+.skill--icon{
+    height: 130%;
+    width: auto;
+    margin-left: 3vh;
+}
+
+.skillbar{
+    position: absolute;
+    top: 45vh;
+    left: 6vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 65%;
+    height: 30%;
+}
+.skillbar>div {
+    display: flex;
+    justify-content: space-between;
+}
+.one--title{
+    display: inline-block;
+    color: var(--lightyellow);
+    font-weight: bold;
+    width: 26%;
+    font-size: 99%;
+}
+
+.container{
+    height: 2vh;
+    width: 70%;
+    background-color: #5d7098;
+    border-radius: 10px;
+    position: relative;
+}
+.runbar{
+    height: 2vh;
+    background-color: var(--yellow);
+    display: inline-block;
+    border-radius: 10px;
+    position: absolute;
+    top:0 ;
+}
+
+.one--runbar{
+    width: 30vw;
+    
+}
+.skills:hover .one--runbar{
+    animation: runbarone 2s linear 500ms 1;
+    animation-fill-mode: backwards;
+}
+
+.two--runbar{
+    width: 27vw;
+}
+.skills:hover .two--runbar{
+    animation: runbartwo 2s linear 500ms 1;
+    animation-fill-mode: backwards;
+}
+
+.three--runbar{
+    width: 38vw;
+}
+.skills:hover .three--runbar{
+    animation: runbarthree 2s linear 500ms 1;
+    animation-fill-mode: backwards;
+}
+
+.four--runbar{
+    width: 37vw;
+}
+.skills:hover .four--runbar{
+    animation: runbarfour 2s linear 500ms 1;
+    animation-fill-mode: backwards;
+}
+
+.five--runbar{
+    width: 40vw;
+}
+.skills:hover .five--runbar{
+    animation: runbarfive 2s linear 500ms 1;
+    animation-fill-mode: backwards;
+}
+@keyframes runbarone {
+    0% {width: 0;}
+    100% {width: 30vw;}
+}
+@keyframes runbartwo {
+    0% {width: 0;}
+    100% {width: 27vw;}
+}
+@keyframes runbarthree {
+    0% {width: 0;}
+    100% {width: 38vw;}
+}
+@keyframes runbarfour {
+    0% {width: 0;}
+    100% {width: 37vw;}
+}
+@keyframes runbarfive {
+    0% {width: 0;}
+    100% {width: 40vw;}
+}
+
+@media (min-width:200px)and (max-width:768px){
+    .skilltitle{
+        width: 12%;
+        left: 79%;
+    }
+    .skilltitle>p{
+        font-size: 230%;
+    }
+    .skillicon{
+        left: 2%;
+        width: 50%;
+    }
+    .skill--icon{
+        height: 5vh;
+        margin-left: 3vh;
+    }
+
+    .skillbar{
+        top: 40vh;
+        left: 4vw;
+        width: 70%;
+        height: 35%;
+    }
+    .one--title{
+        width: 26%;
+        font-size: 72%;  
+    }
+    .container{
+        height: 2vh;
+        width: 65%;
+    }
+    
+}
