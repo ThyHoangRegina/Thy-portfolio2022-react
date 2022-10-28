@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/Thy-portfolio2022-react/static/css/main.cca0689f.css",
+    "main.js": "/Thy-portfolio2022-react/static/js/main.d8bb1aeb.js",
+    "static/js/787.a6d778f5.chunk.js": "/Thy-portfolio2022-react/static/js/787.a6d778f5.chunk.js",
+    "static/media/anhchinh.jpg": "/Thy-portfolio2022-react/static/media/anhchinh.fcb344590b9c6d2342d2.jpg",
+    "static/media/anhcontact.jpg": "/Thy-portfolio2022-react/static/media/anhcontact.2a09942b6d2907c530a2.jpg",
+    "static/media/aiesecphoto.jpg": "/Thy-portfolio2022-react/static/media/aiesecphoto.5f092ddbc812ff370167.jpg",
+    "static/media/FE-dev-fresher-thy-hoang.pdf": "/Thy-portfolio2022-react/static/media/FE-dev-fresher-thy-hoang.83976daf5b3948347163.pdf",
+    "static/media/hero_photo.jpg": "/Thy-portfolio2022-react/static/media/hero_photo.c2ee3d0e169260aa8e5e.jpg",
+    "index.html": "/Thy-portfolio2022-react/index.html",
+    "main.cca0689f.css.map": "/Thy-portfolio2022-react/static/css/main.cca0689f.css.map",
+    "main.d8bb1aeb.js.map": "/Thy-portfolio2022-react/static/js/main.d8bb1aeb.js.map",
+    "787.a6d778f5.chunk.js.map": "/Thy-portfolio2022-react/static/js/787.a6d778f5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.cca0689f.css",
+    "static/js/main.d8bb1aeb.js"
+  ]
+}
